@@ -1,6 +1,6 @@
 from fastapi import FastAPI, HTTPException
 from pydantic import BaseModel
-from mongodb import MongoDB
+from database import MongoDB
 import uvicorn
 
 app = FastAPI()
