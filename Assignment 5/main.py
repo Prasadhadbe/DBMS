@@ -1,5 +1,5 @@
-from fastapi import FastAPI, HTTPException
-from pydantic import BaseModel
+from fastapi import FastAPI, HTTPException # type: ignore
+from pydantic import BaseModel # type: ignore
 from database import create_connection, create_student, get_students, get_student_by_id, update_student, delete_student
 
 app = FastAPI()
