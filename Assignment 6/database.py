@@ -1,4 +1,3 @@
-from database import MongoDB
 from pymongo import MongoClient
 from bson import ObjectId
 
@@ -23,7 +22,3 @@ class MongoDB:
     def delete_document(self, document_id):
         result = self.collection.delete_one({"_id": ObjectId(document_id)})
         return result.deleted_count
-
-# Example usage:
-# db = MongoDB("mongodb://localhost:27017/", "yourDatabaseName", "yourCollectionName")
-# db.create_document({"name": "test"})
